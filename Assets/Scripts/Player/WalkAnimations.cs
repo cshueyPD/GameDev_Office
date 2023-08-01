@@ -5,34 +5,57 @@ using UnityEngine.InputSystem;
 
 public class WalkAnimations : MonoBehaviour
 {
-  [SerializeField]
-  private Animator _animator;
-  public void OnMove(InputValue value)
-  {
-    var move = value.Get<Vector2>();
+    [SerializeField]
+    private Animator _animator;
+    [SerializeField]
+    private float _speedMultiplier = 2.0f;
 
-    if (move == Vector2.zero)
+
+    public void OnMove(InputValue value)
     {
-      _animator.SetBool("Up", false);
-      _animator.SetBool("Down", false);
-      _animator.SetBool("Left", false);
-      _animator.SetBool("Right", false);
+        var move = value.Get<Vector2>();
+
+        if (move == Vector2.zero)
+        {
+            _animator.SetInteger("Direction", (int) Direction.STOP);
+        }
+        else if (move == Vector2.left)
+        {
+            _animator.SetInteger("Direction", (int)Direction.LEFT);
+        }
+        else if (move == Vector2.right)
+        {
+            _animator.SetInteger("Direction", (int)Direction.RIGHT);
+        }
+        else if (move == Vector2.up)
+        {
+            _animator.SetInteger("Direction", (int)Direction.UP);
+        }
+        else if (move == Vector2.down)
+        {
+            _animator.SetInteger("Direction", (int)Direction.DOWN);
+        }
+        // Debug.Log($"Move: {move}");
     }
-    else if (move == Vector2.left)
+
+    public void Sprint(bool isSprinting)
     {
-      _animator.SetBool("Left", true);
+        if (isSprinting)
+        {
+            _animator.speed *= _speedMultiplier;
+        }
+        else
+        {
+            _animator.speed /= _speedMultiplier;
+        }
     }
-    else if (move == Vector2.right)
-    {
-      _animator.SetBool("Right", true);
-    }
-    else if(move == Vector2.up)
-    {
-      _animator.SetBool("Up", true);
-    }
-    else if (move == Vector2.down)
-    {
-      _animator.SetBool("Down", true);
-    }
-  }   
+}
+
+public enum Direction
+{
+    STOP = 0,
+    UP,
+    RIGHT,
+    DOWN,
+    LEFT,
 }

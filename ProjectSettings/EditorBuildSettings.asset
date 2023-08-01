@@ -6,7 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TitleScreen.unity
+    guid: b2743c351baae1c438232b630c074fa3
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Caleb.unity
+    guid: 7b41ff02783e5b548966f098f5af6248
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: e2be1b38fcf2d034c8bef65537540c64, type: 2}
