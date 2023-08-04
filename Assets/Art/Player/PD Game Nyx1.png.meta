@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f83ced416fdbc5b4788b44b1a713bd0d
+guid: b24b278488e5b2d4393f3e9253c251a2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -7,7 +7,7 @@ TextureImporter:
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -43,11 +43,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 50
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -101,23 +101,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Nyx_Down1
+      name: PD Game Nyx1_D0
       rect:
         serializedVersion: 2
         x: 0
@@ -131,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a0d1e69096d9f849947beb082da8c68
-      internalID: 1887400445
+      spriteID: a06ed5b4f83bf164d962f8f5738ce5f8
+      internalID: -195962093
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Down2
+      name: PD Game Nyx1_D1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f9ec92f05a7b0247a7b22f3cb6800c7
-      internalID: -775240677
+      spriteID: e5d0101ac5b34b4498ff930e36bc1b8b
+      internalID: 592906876
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Down3
+      name: PD Game Nyx1_D2
       rect:
         serializedVersion: 2
         x: 64
@@ -173,14 +161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f72db61dacb22b3458bf8d6a98a9f437
-      internalID: 1120735209
+      spriteID: 12c7e11071a8b96418f7521abcc74b44
+      internalID: 211197852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Down4
+      name: PD Game Nyx1_D3
       rect:
         serializedVersion: 2
         x: 96
@@ -194,14 +182,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 134c50867c5efd742a1e6f31da809248
-      internalID: 1991603901
+      spriteID: e2c4dea32ef3eda46b5776ab010453ab
+      internalID: 1670455418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Right1
+      name: PD Game Nyx1_R0
       rect:
         serializedVersion: 2
         x: 128
@@ -215,14 +203,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1369e2b99a6fe034bb518e21eff97f3a
-      internalID: 1871156365
+      spriteID: a7799b29543db944d918502392eb0fd4
+      internalID: 1208737335
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Right2
+      name: PD Game Nyx1_R1
       rect:
         serializedVersion: 2
         x: 160
@@ -236,14 +224,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89be3406d03479d43b106a1d4a9065ae
-      internalID: 1007363774
+      spriteID: bf5dedcf028d85c4392dd52f23ce229b
+      internalID: 1767802546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Right3
+      name: PD Game Nyx1_R2
       rect:
         serializedVersion: 2
         x: 0
@@ -257,14 +245,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa58b2007dd733f4689b3ea7876775f4
-      internalID: 291218547
+      spriteID: 621bf86af811e294c9cbf893dd48621d
+      internalID: 2008172896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Right4
+      name: PD Game Nyx1_R3
       rect:
         serializedVersion: 2
         x: 32
@@ -278,14 +266,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e5adcd1b5fcedb46af3733547157ea1
-      internalID: 680907515
+      spriteID: 5c2337618fbca984895b92c2a6b4347a
+      internalID: -2008813581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Up1
+      name: PD Game Nyx1_U0
       rect:
         serializedVersion: 2
         x: 64
@@ -299,14 +287,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d70a598fd4c8874582a8ecab3d94fb9
-      internalID: -1673466986
+      spriteID: 601e2c1386e6b44449deca1356f0672b
+      internalID: -686891177
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Up2
+      name: PD Game Nyx1_U1
       rect:
         serializedVersion: 2
         x: 96
@@ -320,14 +308,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 460848a6e1f375f4694c7316483972c6
-      internalID: 110561664
+      spriteID: 6fb3540991af2e44492a3d1349f1df87
+      internalID: 1843450999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Up3
+      name: PD Game Nyx1_U2
       rect:
         serializedVersion: 2
         x: 128
@@ -341,14 +329,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0dbdcd383ed68fb4abf1fd4198b3c3af
-      internalID: 1051178752
+      spriteID: 1d78e148b7575cf4f9a860ce7efdb993
+      internalID: 856771482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Up4
+      name: PD Game Nyx1_U3
       rect:
         serializedVersion: 2
         x: 160
@@ -362,14 +350,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a12d62f194283a44ea361a366d7af552
-      internalID: 2009786091
+      spriteID: d23cb6ad2b57a404fbd36ad964eb0d50
+      internalID: 1514526790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Left1
+      name: PD Game Nyx1_L0
       rect:
         serializedVersion: 2
         x: 0
@@ -383,18 +371,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b643c7407f62f314f88418abac24ee73
-      internalID: -1974314751
+      spriteID: db051777ccca22149939a881acd19fb0
+      internalID: -795754526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Left2
+      name: PD Game Nyx1_L1
       rect:
         serializedVersion: 2
         x: 32
-        y: 95
+        y: 96
         width: 32
         height: 32
       alignment: 0
@@ -404,14 +392,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f05ff2338e5f5b4448f6ad9d6814b41b
-      internalID: -1478921303
+      spriteID: 509351c9566859a49bcf65fd0d137497
+      internalID: -731977127
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Left3
+      name: PD Game Nyx1_L2
       rect:
         serializedVersion: 2
         x: 64
@@ -425,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b18b91ad860a3194488921fedf713560
-      internalID: -1525080706
+      spriteID: 24c05ac1228adeb49a3628ce1230d8ca
+      internalID: -2056731044
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Left4
+      name: PD Game Nyx1_L3
       rect:
         serializedVersion: 2
         x: 96
@@ -446,14 +434,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b0c768b1feac70b4f9b1fe37db37af5d
-      internalID: -448628786
+      spriteID: 9e25b9e3072a3f04eae9f135c09ccded
+      internalID: 1995177999
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Sit1
+      name: PD Game Nyx1_Sit0
       rect:
         serializedVersion: 2
         x: 128
@@ -467,14 +455,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ade51fb227655b84b967df22b8721a50
-      internalID: -1830572748
+      spriteID: ebffdb2dfd3a2fb4f93d2e5b5d1f0f90
+      internalID: -1286713817
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Sit2
+      name: PD Game Nyx1_Sit1
       rect:
         serializedVersion: 2
         x: 160
@@ -488,14 +476,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b006917bed3a74e45997aaaffd74be21
-      internalID: -989119945
+      spriteID: 7e9069d83af2852489a3019e8f585b3e
+      internalID: 1335404376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Idle1
+      name: PD Game Nyx1_Sit2
       rect:
         serializedVersion: 2
         x: 0
@@ -509,14 +497,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e3f21b1515de48a45a7361f54823d48b
-      internalID: -1748492590
+      spriteID: 8d5fe27f7218cd84c8981e987dc01c59
+      internalID: -1417175676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_Idle2
+      name: PD Game Nyx1_Sit3
       rect:
         serializedVersion: 2
         x: 32
@@ -530,14 +518,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6dce0e713ffbcc448a2e7182deb7132
-      internalID: -51342907
+      spriteID: 91bf662c208609c449799aebfd144cdd
+      internalID: -538044260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_SitB1
+      name: PD Game Nyx1_SitR0
       rect:
         serializedVersion: 2
         x: 64
@@ -551,14 +539,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56c2c9e951e2e8b40bfff6d7a753e099
-      internalID: -671452418
+      spriteID: a7a19b970cbe63e4d974ad30d6fe28ed
+      internalID: -1125726714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_SitB2
+      name: PD Game Nyx1_SitR1
       rect:
         serializedVersion: 2
         x: 96
@@ -572,14 +560,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269cf822a5e771b48a80c3cf4bceb9b3
-      internalID: -2024851364
+      spriteID: daa2a94faba14614dbbb2b844ad82436
+      internalID: -1028582714
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_IdleB1
+      name: PD Game Nyx1_SitR2
       rect:
         serializedVersion: 2
         x: 128
@@ -593,14 +581,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9deda17bafbf87c49b8481c00bb33bfc
-      internalID: -1210742670
+      spriteID: aea51239bdf754f44bbd772e3570b6e5
+      internalID: -1070293170
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_IdleB2
+      name: PD Game Nyx1_Idle0
       rect:
         serializedVersion: 2
         x: 160
@@ -614,14 +602,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09d41d24f81e5c34db91c13103a5c4ac
-      internalID: -1199280218
+      spriteID: 5a152f469a775a746a1d48a7e2839dd9
+      internalID: 1544380568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_IdleB3
+      name: PD Game Nyx1_Idle1
       rect:
         serializedVersion: 2
         x: 0
@@ -635,14 +623,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d3fd26832c10ec498c5d8b412471b57
-      internalID: 1139341489
+      spriteID: 3cf5826b5789d6d4aa42464479866de1
+      internalID: -1906491433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_IdleB4
+      name: PD Game Nyx1_Idle2
       rect:
         serializedVersion: 2
         x: 32
@@ -656,14 +644,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 32f6993eb3cd2274e96ce251b01c1d15
-      internalID: -789831263
+      spriteID: 30717164688edb1468beb1b43c8cdbde
+      internalID: -2080693524
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Nyx_IdleB5
+      name: PD Game Nyx1_Idle3
       rect:
         serializedVersion: 2
         x: 64
@@ -677,14 +665,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56443b72de7ca69439f6b0bc9d8fea9f
-      internalID: 1669842266
+      spriteID: c717396781fe3e749bb15213f04dc311
+      internalID: 565102422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PD Game Nyx1_27
+      name: PD Game Nyx1_Lay0
       rect:
         serializedVersion: 2
         x: 96
@@ -698,14 +686,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0cac90a7157597c46a3fbe1dd6437400
-      internalID: 1862788562
+      spriteID: 5c48b1b99e11602498e1a02bc57d7517
+      internalID: -192815855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PD Game Nyx1_28
+      name: PD Game Nyx1_Lay1
       rect:
         serializedVersion: 2
         x: 128
@@ -719,14 +707,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b3b95db757046d4eb475f4b1f3b0d3c
-      internalID: 665754142
+      spriteID: e1a3b3a188867994792785a916a948e0
+      internalID: -2074170292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PD Game Nyx1_29
+      name: PD Game Nyx1_Lay2
       rect:
         serializedVersion: 2
         x: 160
@@ -740,8 +728,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d77cfb84280b37343a883225faf1d581
-      internalID: 1573236515
+      spriteID: b3ac7346aed32ab4ba8d71e3e76fea70
+      internalID: -735836916
       vertices: []
       indices: 
       edges: []
@@ -761,8 +749,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c995197501374ac409850cd003465237
-      internalID: -883931748
+      spriteID: fb8817c823653c54cb98ecb859095b2f
+      internalID: 1303644520
       vertices: []
       indices: 
       edges: []
@@ -782,8 +770,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06c185789e4aa3e43a0905a9ea823546
-      internalID: 15297264
+      spriteID: 852bd5347393c6241b62d6e8fe0b5ada
+      internalID: -1202151323
       vertices: []
       indices: 
       edges: []
@@ -803,8 +791,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82d171bde00c4374a8f827a7b67cfcf7
-      internalID: 791234975
+      spriteID: ccf0650ce582f0d43a5b0c4933a01445
+      internalID: 146552790
       vertices: []
       indices: 
       edges: []
@@ -824,8 +812,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24ffa657eafa0404b99af60ca37e522f
-      internalID: 687755081
+      spriteID: 13d67d2be5176f84188ac5c44eb009ac
+      internalID: -1445702038
       vertices: []
       indices: 
       edges: []
@@ -841,40 +829,40 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Nyx_Sit2: -989119945
-      Nyx_Down3: 1120735209
-      PD Game Nyx1_27: 1862788562
-      Nyx_Up1: -1673466986
-      Nyx_Down2: -775240677
-      Nyx_Right3: 291218547
-      Nyx_Idle1: -1748492590
-      Nyx_IdleB1: -1210742670
-      Nyx_Left2: -1478921303
-      Nyx_Left3: -1525080706
-      PD Game Nyx1_30: -883931748
-      Nyx_Right1: 1871156365
-      PD Game Nyx1_33: 687755081
-      Nyx_IdleB5: 1669842266
-      Nyx_Up4: 2009786091
-      Nyx_Idle2: -51342907
-      PD Game Nyx1_28: 665754142
-      Nyx_Left1: -1974314751
-      Nyx_SitB1: -671452418
-      PD Game Nyx1_29: 1573236515
-      Nyx_Right4: 680907515
-      Nyx_Up3: 1051178752
-      Nyx_SitB2: -2024851364
-      Nyx_Right2: 1007363774
-      Nyx_Sit1: -1830572748
-      Nyx_IdleB3: 1139341489
-      PD Game Nyx1_31: 15297264
-      Nyx_Up2: 110561664
-      Nyx_Down4: 1991603901
-      Nyx_Left4: -448628786
-      Nyx_IdleB2: -1199280218
-      PD Game Nyx1_32: 791234975
-      Nyx_IdleB4: -789831263
-      Nyx_Down1: 1887400445
+      PD Game Nyx1_30: 1303644520
+      PD Game Nyx1_31: -1202151323
+      PD Game Nyx1_32: 146552790
+      PD Game Nyx1_33: -1445702038
+      PD Game Nyx1_D0: 592906876
+      PD Game Nyx1_D1: 211197852
+      PD Game Nyx1_D2: 1670455418
+      PD Game Nyx1_D3: 1208737335
+      PD Game Nyx1_Idle0: 1544380568
+      PD Game Nyx1_Idle1: -1906491433
+      PD Game Nyx1_Idle2: -2080693524
+      PD Game Nyx1_Idle3: 565102422
+      PD Game Nyx1_L0: -795754526
+      PD Game Nyx1_L1: -731977127
+      PD Game Nyx1_L2: -2056731044
+      PD Game Nyx1_L3: 1995177999
+      PD Game Nyx1_Lay0: -192815855
+      PD Game Nyx1_Lay1: -2074170292
+      PD Game Nyx1_Lay2: -735836916
+      PD Game Nyx1_R0: 1208737335
+      PD Game Nyx1_R1: 1767802546
+      PD Game Nyx1_R2: 2008172896
+      PD Game Nyx1_R3: -2008813581
+      PD Game Nyx1_Sit0: -1286713817
+      PD Game Nyx1_Sit1: 1335404376
+      PD Game Nyx1_Sit2: -1417175676
+      PD Game Nyx1_Sit3: -538044260
+      PD Game Nyx1_SitR0: -1125726714
+      PD Game Nyx1_SitR1: -1028582714
+      PD Game Nyx1_SitR2: -1070293170
+      PD Game Nyx1_U0: -686891177
+      PD Game Nyx1_U1: 1843450999
+      PD Game Nyx1_U2: 856771482
+      PD Game Nyx1_U3: 1514526790
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

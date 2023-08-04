@@ -15,11 +15,11 @@ public class WalkAnimations : MonoBehaviour
     {
         var move = value.Get<Vector2>();
 
-        if (move == Vector2.zero)
-        {
-            _animator.SetInteger("Direction", (int) Direction.STOP);
-        }
-        else if (move == Vector2.left)
+        // if (move == Vector2.zero)
+        // {
+        //     _animator.SetInteger("Direction", (int) Direction.STOP);
+        // }
+        if (move == Vector2.left)
         {
             _animator.SetInteger("Direction", (int)Direction.LEFT);
         }
@@ -34,6 +34,10 @@ public class WalkAnimations : MonoBehaviour
         else if (move == Vector2.down)
         {
             _animator.SetInteger("Direction", (int)Direction.DOWN);
+        }
+        else
+        {
+            _animator.SetInteger("Direction", (int)Direction.STOP);
         }
         // Debug.Log($"Move: {move}");
     }

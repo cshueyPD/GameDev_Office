@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b79cb2bdb515e524bb2d41141019a1ed
+guid: feaf8d61f00f4f044a8690b777f8d74f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -69,18 +69,18 @@ ScriptedImporter:
     textureFormatSet: 0
     applyGammaDecoding: 0
   spriteImportData:
-  - name: Map_V0_1
+  - name: 
     originalName: 
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0, y: 0}
     alignment: 0
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
       serializedVersion: 2
       x: 0
       y: 0
-      width: 3713
-      height: 2560
-    spriteID: 6e4b55226c87e0b46b41fd9d64a821ea
+      width: 0
+      height: 0
+    spriteID: 
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -104,7 +104,7 @@ ScriptedImporter:
       y: 2572
       width: 2879
       height: 2111
-    spriteID: befd579120980a34ebd094b725b24a5e
+    spriteID: 17cd719aaea2f564384b52aa6f420e03
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -126,7 +126,7 @@ ScriptedImporter:
       y: 4
       width: 3712
       height: 2560
-    spriteID: 8b02117609e088242a570e30f58fb901
+    spriteID: 6008634781892af4a8a8007e1658be3b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -184,17 +184,6 @@ ScriptedImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     androidETC2FallbackOverride: 0
-  - name: Android
-    overridden: 0
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    androidETC2FallbackOverride: 0
   mosaicLayers: 1
   characterMode: 1
   documentPivot: {x: 0, y: 0}
@@ -215,7 +204,7 @@ ScriptedImporter:
     spriteName: Walls
     isGroup: 0
     parentIndex: -1
-    spriteID: befd579120980a34ebd094b725b24a5e
+    spriteID: 17cd719aaea2f564384b52aa6f420e03
     layerID: 5
     mosaicPosition: {x: 4, y: 2572}
     flatten: 0
@@ -225,7 +214,7 @@ ScriptedImporter:
     spriteName: Floor
     isGroup: 0
     parentIndex: -1
-    spriteID: 8b02117609e088242a570e30f58fb901
+    spriteID: 6008634781892af4a8a8007e1658be3b
     layerID: 7
     mosaicPosition: {x: 4, y: 4}
     flatten: 0
@@ -235,7 +224,7 @@ ScriptedImporter:
     spriteName: 
     isGroup: 0
     parentIndex: -1
-    spriteID: bb76091a95f49b24a8fe1c5a33b0cc84
+    spriteID: 5c64d50db7696db4fb8894a8746dddec
     layerID: 1
     mosaicPosition: {x: 0, y: 0}
     flatten: 0

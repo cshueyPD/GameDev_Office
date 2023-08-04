@@ -13,7 +13,7 @@ public class MovePlayer : MonoBehaviour
 
     public void OnMove(InputValue value)
     {
-        _move = value.Get<Vector2>();
+        _move = value.Get<Vector2>().normalized;
     }
 
     public void Sprint(bool isSprinting)
