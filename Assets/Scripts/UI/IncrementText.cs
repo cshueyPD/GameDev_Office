@@ -3,8 +3,7 @@ using TMPro;
 
 public class IncrementText : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _object;
+    public SO_Event _finishedEvent;
     [SerializeField]
     private int _max;
     private TextMeshProUGUI _text;
@@ -15,11 +14,9 @@ public class IncrementText : MonoBehaviour
     {
         int.TryParse(_text.text, out int value);
         _text.text = $"{++value}";
-        if(value >= _max){
-            if (_object != null)
-            {
-                _object.SetActive(true);
-            }
+        if(value >= _max)
+        {
+            _finishedEvent.Raise();
         }
     }
 }
