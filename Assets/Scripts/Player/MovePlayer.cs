@@ -11,9 +11,15 @@ public class MovePlayer : MonoBehaviour
     private float _speedMultiplier = 2.0f;
     private Vector2 _move = Vector2.zero;
 
+    public Animator animator;
+
+
     public void OnMove(InputValue value)
     {
         _move = value.Get<Vector2>().normalized;
+       animator.SetFloat("Horizontal", value.Get<Vector2>().x);
+       animator.SetFloat("Vertical",value.Get<Vector2>().y);
+       animator.SetFloat("Speed",value.Get<Vector2>().sqrMagnitude);
     }
 
     public void Sprint(bool isSprinting)
