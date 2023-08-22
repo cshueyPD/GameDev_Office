@@ -31,8 +31,8 @@ int i=0;
 
 private int FindCollisions(Vector2 pos)  //Check for collisions
 {
-Collider[] hits = Physics.OverlapSphere(pos, 1f);
-//Debug.Log(hits.Length);
+Collider2D[] hits = Physics2D.OverlapCircleAll(pos, 1f);
+Debug.Log(hits.Length);
 return hits.Length;
 
 
