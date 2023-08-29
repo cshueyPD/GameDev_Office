@@ -41,15 +41,15 @@ public class PD_Spawner : MonoBehaviour
   }
 
 
-  private void SpawnInZone(int XLow, int XHigh, int YLow, int YHigh)
+  private void SpawnInZone(float XLow, float XHigh, float YLow, float YHigh)
   {
     float nearestDistance = 100;
     int i = 0;
 
     while (i < numCheezit)
     {
-      int spawnPointX = Random.Range(XLow, XHigh);  //Pick Random X Position
-      int spawnPointY = Random.Range(YLow, YHigh);     //Pick Random Y Position
+      float spawnPointX = Random.Range(XLow, XHigh);  //Pick Random X Position
+      float spawnPointY = Random.Range(YLow, YHigh);     //Pick Random Y Position
       Vector2 spawnPosition = new Vector2(spawnPointX, spawnPointY);
 
       AllObjects = GameObject.FindGameObjectsWithTag("Collectable");
@@ -66,28 +66,21 @@ public class PD_Spawner : MonoBehaviour
           if (distance < nearestDistance)
           {
 
-            //NearestOBJ = AllObjects[j];
+            NearestOBJ = AllObjects[j];
             nearestDistance = distance;
                        
           }
 
         }
-      }
+      } 
 
-    Debug.Log("Nearest Distance is "+nearestDistance);
-
-      if (nearestDistance >=1f)
-      {
+       
          if(FindCollisions(spawnPosition) < 1)
         {
             Instantiate(Cheezit, spawnPosition, Quaternion.identity);  // If there are no collisions, spawn CheezIt
-            Debug.Log("Spawn");
             i++;
         }
-        else Debug.Log("Colliding");
-        
-      }
-      else Debug.Log("Too Close");
-    }
+    
   }
+}
 }
