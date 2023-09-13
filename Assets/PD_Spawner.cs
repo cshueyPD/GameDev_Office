@@ -16,13 +16,14 @@ public class PD_Spawner : MonoBehaviour
   void Start()
   {
 
+
     SpawnInZone(-14, -4, 7, 16);
-    SpawnInZone(-4, -6, 7, 16);
+    SpawnInZone(-4, 6, 7, 16);
     SpawnInZone(6, 17, 7, 16);
 
     SpawnInZone(-14, -4, 16, 24);
     SpawnInZone(-4, 6, 16, 24);
-    SpawnInZone(6, 17, 16, 24);
+    SpawnInZone(6, 17, 16, 24); 
 
 
   }
@@ -45,6 +46,7 @@ public class PD_Spawner : MonoBehaviour
   {
     float nearestDistance = 100;
     int i = 0;
+    int k =0;
 
     while (i < numCheezit)
     {
@@ -74,13 +76,25 @@ public class PD_Spawner : MonoBehaviour
         }
       } 
 
-       
-         if(FindCollisions(spawnPosition) < 1)
+       if(nearestDistance >=3)
+       {
+         if(FindCollisions(spawnPosition) < 1 )
         {
             Instantiate(Cheezit, spawnPosition, Quaternion.identity);  // If there are no collisions, spawn CheezIt
+           // Debug.Log("Spawned");
             i++;
         }
-    
+       }
+       else {
+        //Debug.Log("Tried " + spawnPointX +"," +spawnPointY +". Too Close");
+        k++;
+       }
+
+       if (k >= 20)
+       {
+        //Debug.Log("Number of Tries surpassed. Spawn aborted");
+        i= numCheezit;
+       }
   }
 }
 }

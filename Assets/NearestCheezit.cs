@@ -39,7 +39,7 @@ public class NearestCheezit : MonoBehaviour
 
             NearestOBJ = AllObjects[j];
             nearestDistance = distance;
-            Debug.Log(nearestDistance);
+            Debug.Log("Distance to nearest CheezIt is " + nearestDistance);
                        
           }
 
