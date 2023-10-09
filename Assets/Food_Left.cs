@@ -39,7 +39,7 @@ private void OnCollisionStay2D (Collision2D other)
 
 if (other.gameObject.CompareTag("Enemy")){
 
-CurrentValue -= 0.01f;
+CurrentValue -= 1f*Time.deltaTime;
 
 
 }
