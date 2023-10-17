@@ -9,7 +9,7 @@ public class Enemy_Movement : MonoBehaviour
     public float speed =3f;
     public float rotateSpeed = 0.0025f;
    [SerializeField] float health =3f; 
-   //[SerializeField] float maxHealth =3f;
+   [SerializeField] public float hunger =1f;
    //[SerializeField] floatingHealthBar bar;
 
     private Rigidbody2D rb;
