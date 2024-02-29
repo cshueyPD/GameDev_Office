@@ -10,7 +10,8 @@ public class Enemy_Movement : MonoBehaviour
     public float rotateSpeed = 0.0025f;
    [SerializeField] float health =3f; 
    [SerializeField] public float hunger =1f;
-   //[SerializeField] floatingHealthBar bar;
+
+   
 
     private Rigidbody2D rb;
     
@@ -28,17 +29,17 @@ public class Enemy_Movement : MonoBehaviour
     void Update()
     {
     // Get the target
-    if(!target) 
-    {
+    //if(!target) 
+    //{
         GetTarget();
-    }
-     else
-     {
+    //}
+     //else
+    // {
         RotateTowardsTarget();
 
 
 
-     }
+     //}
     
   
 
@@ -59,7 +60,10 @@ rb.velocity = transform.up * speed;
 
 private void GetTarget()
 {
-if( GameObject.FindGameObjectWithTag("Food")){
+if( GameObject.FindGameObjectWithTag("Pizza")){
+target = GameObject.FindGameObjectWithTag("Pizza").transform;
+}
+else if( GameObject.FindGameObjectWithTag("Food")){
 target = GameObject.FindGameObjectWithTag("Food").transform;
 }
 
@@ -83,13 +87,22 @@ private void OnCollisionEnter2D (Collision2D other)
 if(other.gameObject.CompareTag("Player")){
 Destroy(other.gameObject);
 target = null;
+FindObjectOfType<gameManager>().EndGame();
+
 
 }else if (other.gameObject.CompareTag("Projectile")){
-Destroy(other.gameObject);
 
-health -=1;
-//bar.UpdateHealthBar(maxHealth,health);
 
+health-= other.gameObject.GetComponent<Projectile_Motion>().damage;
+
+if(other.gameObject.GetComponent<Projectile_Motion>().isExplosive)
+{
+other.gameObject.GetComponent<Projectile_Motion>().splashDamage();
+}
+            else
+            {
+                Destroy(other.gameObject);
+            }
 }
 
 
@@ -97,11 +110,23 @@ if(health<=0)
 {
 
 Destroy(gameObject);
+FindObjectOfType<Score>().UpdateScore();
 }
 
 }
 
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+        if (health <= 0)
+        {
 
+            Destroy(gameObject);
+            FindObjectOfType<Score>().UpdateScore();
+            FindObjectOfType<gameManager>().enemyKillCounter();
+        }
+
+    }
 
 
 

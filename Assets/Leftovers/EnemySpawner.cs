@@ -12,6 +12,7 @@ public class EnemySpawner : MonoBehaviour
 
    private void Start()
    {
+
 StartCoroutine (Spawner());
 
 
@@ -27,13 +28,37 @@ while(canSpawn)
 {
 yield return wait;
 
-int rand = Random.Range(0, enemyPrefabs.Length);
-GameObject enemyToSpawn = enemyPrefabs[rand];
 
+int rand = Random.Range(1,100);
+
+if (rand<70f)
+{
+GameObject enemyToSpawn = enemyPrefabs[0];
 Instantiate (enemyToSpawn, transform.position, Quaternion.identity);
 }
 
+if (rand >70f && rand<90f)
+{
+GameObject enemyToSpawn = enemyPrefabs[1];
+Instantiate (enemyToSpawn, transform.position, Quaternion.identity);
 }
+
+if (rand>90f)
+{GameObject enemyToSpawn = enemyPrefabs[2]; 
+Instantiate (enemyToSpawn, transform.position, Quaternion.identity);
+}
+
+//int rand = Random.Range(0, enemyPrefabs.Length);
+//GameObject enemyToSpawn = enemyPrefabs[rand];
+//Instantiate (enemyToSpawn, transform.position, Quaternion.identity);
+
+
+}
+
+
+
+}
+
 
 
 
