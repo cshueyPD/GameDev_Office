@@ -1,34 +1,90 @@
 
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class gameManager : MonoBehaviour
 {
-    public int enemyKillCount = 0;
+    public static gameManager Instance { get; private set; }
 
-    bool gameHasEnded = false;
-  public  void EndGame()
+    [SerializeField]
+    private SceneChanger gameOver;
+
+    [SerializeField]
+    private SceneChanger highScore;
+
+    [SerializeField]
+    private SceneChanger scores;
+
+    [SerializeField]
+    private SceneChanger menu;
+
+    [SerializeField]
+    private SceneChanger lunchTime;
+
+    public bool gameHasEnded = false;
+    public bool canFire = true;
+    public ProjectileType currentProjectile = ProjectileType.RED;
+
+    void Awake()
     {
-    if (gameHasEnded == false)
+        if (Instance == null)
         {
+            Instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+        else if (Instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+    }
+
+    public void EndGame()
+    {
+        if (gameHasEnded == false)
+        {
+            if (LeaderboardManager.Instance.CheckIfHighScore(ScoreManager.Instance.GetScore()))
+            {
+                HighScore();
+            }
+            else
+            {
+                gameOver.SwitchToScene();
+            }
+
             gameHasEnded =true;
             Debug.Log("Game Over");
-            Invoke("Restart",1f);
         }
 
     }
 
-    void Restart()
+    public void HighScore()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-
+        highScore.SwitchToScene();
     }
 
 
-    public void enemyKillCounter()
+    public void Restart()
     {
-
-    enemyKillCount += 1;
-
+        ScoreManager.Instance.SetScore(0);
+        gameHasEnded = false;
+        lunchTime.SwitchToScene();
     }
+
+    public void Quit()
+    {
+        ScoreManager.Instance.SetScore(0);
+        gameHasEnded = false;
+        menu.SwitchToScene();
+    }
+
+    public void Scores()
+    {
+        scores.SwitchToScene();
+    }
+}
+
+public enum ProjectileType
+{
+    RED = 0,
+    GREEN,
+    DONUT,
 }

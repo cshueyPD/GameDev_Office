@@ -1,11 +1,12 @@
-
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class Score : MonoBehaviour
 {
-public Text ScoreText;
-public int score = 0;
+    [SerializeField]
+    private TextMeshProUGUI ScoreText;
+    private int score = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -13,16 +14,9 @@ public int score = 0;
         ScoreText.text = score.ToString();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void UpdateScore()
     {
-        ScoreText.text = score.ToString();
+        ScoreText.text = ScoreManager.Instance.GetScore().ToString();
+
     }
-
-public void UpdateScore()
-{
-score += 1;
-
-}
-
 }

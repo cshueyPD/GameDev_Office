@@ -11,8 +11,15 @@ public class SceneChanger : MonoBehaviour
     {
         if (targetSceneAsset != null && targetSceneAsset.State != SceneReferenceState.Unsafe)
         {
-            // Debug.Log($"Switching to scene: {targetSceneAsset.Name}");
             SceneManager.LoadScene(targetSceneAsset.Name);
+        }
+    }
+
+    public void AddToScene()
+    {
+        if (targetSceneAsset != null && targetSceneAsset.State != SceneReferenceState.Unsafe)
+        {
+            SceneManager.LoadScene(targetSceneAsset.Name, LoadSceneMode.Additive);
         }
     }
 }

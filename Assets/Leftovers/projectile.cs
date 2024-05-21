@@ -4,18 +4,15 @@ using UnityEngine;
 
 public class projectile : MonoBehaviour
 {
-    
-public float projectileSpeed = 10f;
 
-Rigidbody2D rb;
+    public float projectileSpeed = 10f;
 
-private void Start()
-{
+    Rigidbody2D rb;
 
-rb = GetComponent<Rigidbody2D>();
-Vector2 force = transform.right;
+    private void Start()
+    {
 
-
-}
-
+        rb = GetComponent<Rigidbody2D>();
+        Vector2 force = transform.right;
+    }
 }

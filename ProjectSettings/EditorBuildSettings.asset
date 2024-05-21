@@ -11,4 +11,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Office.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Leftovers.unity
+    guid: 4a96e94df88811c49a551205879facb2
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: b40b09bac09e06d4da39089ff01b3ae0
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 048b22200f789504da5275ceef3cda94
+  - enabled: 1
+    path: Assets/Scenes/HighScore.unity
+    guid: e107d67c200bb6b469370d9bebfbbc83
+  - enabled: 1
+    path: Assets/Scenes/Scores.unity
+    guid: 9efa07407b50d14479cbd73e7b2aab01
+  - enabled: 1
+    path: Assets/Scenes/ScoreOverlay.unity
+    guid: 3b4cf4d21d7751e46abe098ea22d40db
   m_configObjects: {}
